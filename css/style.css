@@ -1,1 +1,174 @@
+/* =============================================
+   Food, LLC — Module 3 Assignment Styles
+   ============================================= */
+
+/* ---------- Global & Typography ---------- */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #2c2c2c;
+  background-color: #faf8f5;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  background-color: #1a1a2e;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #f0c040 !important;
+  letter-spacing: 1px;
+  padding-top: 14px;
+}
+
+.navbar-brand:hover {
+  color: #ffd966 !important;
+}
+
+/* Mobile toggle button */
+.navbar-toggle {
+  border-color: #f0c040;
+  margin-top: 10px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #f0c040;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: rgba(240, 192, 64, 0.15);
+}
+
+/* Mobile dropdown menu */
+#mobile-menu {
+  background-color: #16213e;
+  width: 100%;
+}
+
+#mobile-menu .nav > li > a {
+  color: #e8e8e8;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 13px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#mobile-menu .nav > li > a:hover,
+#mobile-menu .nav > li > a:focus {
+  background-color: #f0c040;
+  color: #1a1a2e;
+}
+
+/* On xs, force full-width collapse panel */
+@media (max-width: 767px) {
+  .navbar-collapse.visible-xs {
+    display: block !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-collapse.visible-xs .navbar-nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar-collapse.visible-xs .navbar-nav > li {
+    width: 100%;
+  }
+}
+
+/* ---------- Page Heading ---------- */
+
+.page-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.page-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f0c040;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- Menu Section ---------- */
+
+.menu-section {
+  background-color: #ffffff;
+  min-height: 1000px;
+  padding: 35px 40px 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  margin-bottom: 40px;
+  border-top: 4px solid #f0c040;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.menu-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+/* ---------- Back to Top ---------- */
+
+.back-to-top {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.back-to-top a {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f0c040;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.back-to-top a:hover {
+  color: #f0c040;
+}
+
+/* ---------- Mobile Responsive Tweaks ---------- */
+
+@media (max-width: 767px) {
+  .page-heading {
+    font-size: 30px;
+    margin-top: 28px;
+  }
+
+  .menu-section {
+    padding: 24px 20px 28px;
+  }
+}
 
